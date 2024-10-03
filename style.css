@@ -1,0 +1,160 @@
+/*MEDIA & MAIN----------------------------------------------------------*/
+body{
+    background-color: #F9F9F9;
+    height: 100%;
+    font-family: 'Major Mono Display' !important;
+}
+#line-up{
+    height: 1px;
+    width: 500px;
+    background-color: #000000;
+}
+
+/* Header-------------------------------------------------------------*/
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    color: #000000;
+    font-style: bold;
+    font-size: 40px;
+}
+#button-list{
+    width: 500px;
+}
+#click-completed{
+    background-color: #F9F9F9;
+    border: 0px;
+    font-size: 25px;
+    margin-right: 20px;
+    font-family: 'Major Mono Display';
+    transition: border .2s ease-in-out;
+}
+#click-all{
+    background-color: #F9F9F9;
+    border: 0;
+    font-size: 25px;
+    margin-right: 10px;
+    font-family: 'Major Mono Display';
+    transition: border .2s ease-in-out;
+}
+#click-inprocess{
+    background-color: #F9F9F9;
+    border: 0;
+    font-size: 25px;
+    font-family: 'Major Mono Display';
+    transition: border .2s ease-in-out;
+}
+/*HEADER ANIMATION-------------------------------------------------*/
+#click-completed:hover{
+    border: 1px solid #000000;
+}
+#click-all:hover{
+    border: 1px solid #000000;
+}
+#click-inprocess:hover{
+    border: 1px solid #000000;
+}
+
+/*CONTENT---------------------------------------------------------*/
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.task-list{
+    background-color: #1B1B1B;
+    height: 70px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+#text-task{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+    font-size: 13px;
+    width: 440px;
+    height: 70px;
+    color: #F9F9F9;
+}
+#click-delete-task{
+    position: relative;
+    top: -65px;
+    left: 460px;
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+    border: 0px;
+    background-color: #F9F9F9;
+    color: #F9F9F9;
+    font-family: 'Major Mono Display';
+}
+#click-confirm-task{
+    position: relative;
+    border-radius: 20px;
+    top: -30px;
+    left: 423px;
+    width: 25px;
+    height: 25px;
+    border: 0px;    
+    background-color: #F9F9F9;
+    color: #F9F9F9;
+    font-family: 'Major Mono Display';
+}
+/*CONTENT ANIMATION-------------------------------------------------*/
+#click-delete-task:hover{
+    background-color: #9e2727;
+}
+#click-confirm-task:hover{
+    background-color: #3f9e27;
+}
+
+/*FOOTER--------------------------------------------------------*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#list-noumber-task{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+#noumber-list{
+    padding-left: 30px;
+    text-decoration: none;
+    transition: text-decoration .5s ease-in-out;
+}
+#click-deleteall{
+    background-color: #F9F9F9;
+    border: 0px;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-family: 'Major Mono Display';
+    transition: border .2s ease-in-out;
+}
+/*FOOTER ANIMATION-------------------------------------------------*/
+#noumber-list:hover{
+    text-decoration: underline;
+}
+#click-deleteall:hover{
+    border: 1px solid #000000;
+}
+
+
