@@ -27,7 +27,7 @@ body{
 #button-list{
     width: 500px;
 }
-#click-completed{
+#click_completed{
     background-color: #F9F9F9;
     border: 0px;
     font-size: 25px;
@@ -35,7 +35,7 @@ body{
     font-family: 'Major Mono Display';
     transition: border .2s ease-in-out;
 }
-#click-all{
+#click_all{
     background-color: #F9F9F9;
     border: 0;
     font-size: 25px;
@@ -43,7 +43,7 @@ body{
     font-family: 'Major Mono Display';
     transition: border .2s ease-in-out;
 }
-#click-inprocess{
+#click_inprocess{
     background-color: #F9F9F9;
     border: 0;
     font-size: 25px;
@@ -51,13 +51,13 @@ body{
     transition: border .2s ease-in-out;
 }
 /*HEADER ANIMATION-------------------------------------------------*/
-#click-completed:hover{
+#click_completed:hover{
     border: 1px solid #000000;
 }
-#click-all:hover{
+#click_all:hover{
     border: 1px solid #000000;
 }
-#click-inprocess:hover{
+#click_inprocess:hover{
     border: 1px solid #000000;
 }
 
@@ -68,14 +68,35 @@ body{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: -70px;
     margin: 10%;
 }
+.task_list{
+    position: relative;
+    background-color: #F9F9F9;
+    height: 50px;
+    width: 500px;
+    margin-bottom: 10px;
 
-.task-list{
+}
+.add_text_task{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+    font-size: 13px;
+    width: 440px;
+    height: 70px;
+    color: #000000;
+}
+.add-list{
+    position: relative;
     background-color: #1B1B1B;
     height: 70px;
     width: 500px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 #text-task{
     display: flex;
@@ -85,40 +106,54 @@ body{
     align-items: start;
     font-size: 13px;
     width: 440px;
-    height: 70px;
-    color: #F9F9F9;
+    height: 50px;
+    color: #000000;
 }
-#click-delete-task{
+#button-task-list{
     position: relative;
-    top: -65px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.click_delete_task{
+    position: relative;
+    top: -48px;
     left: 460px;
     border-radius: 20px;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 0px;
     background-color: #F9F9F9;
-    color: #F9F9F9;
+    text-align: center;
     font-family: 'Major Mono Display';
 }
-#click-confirm-task{
+.click_confirm_main{
     position: relative;
     border-radius: 20px;
-    top: -30px;
-    left: 423px;
+    top: -50px;
+    left: 460px;
     width: 25px;
     height: 25px;
     border: 0px;    
+    text-align: center;
+    align-items: center;
     background-color: #F9F9F9;
-    color: #F9F9F9;
+    font-family: 'Major Mono Display';
+}
+.click_confirm_task{
+    position: relative;
+    border-radius: 20px;
+    top: -41px;
+    left: 460px;
+    width: 20px;
+    height: 20px;
+    border: 0px;    
+    text-align: center;
+    align-items: center;
+    background-color: #F9F9F9;
     font-family: 'Major Mono Display';
 }
 /*CONTENT ANIMATION-------------------------------------------------*/
-#click-delete-task:hover{
-    background-color: #9e2727;
-}
-#click-confirm-task:hover{
-    background-color: #3f9e27;
-}
 
 /*FOOTER--------------------------------------------------------*/
 .footer{
@@ -127,6 +162,7 @@ body{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    margin-top: 230px;
 }
 #list-noumber-task{
     display: flex;
@@ -135,6 +171,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 500px;
+    margin-top: 20px;
 }
 #noumber-list{
     padding-left: 30px;

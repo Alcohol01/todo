@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
     </style>
-    <script src="mane.js"></script>
+    <script src="mane.js" defer></script>
 
     <title>TO-DO JS</title>
 </head>
@@ -19,39 +19,23 @@
     <div id="logo">TODO JS</div>
         <hr id="line-up">
         <div id="button-list">
-            <button id="click-completed">completed</button>
-            <button id="click-all">all</button>
-            
-            <button id="click-inprocess">in process</button>
-    </div>
+            <button id="click_completed" data-completed="completed-task">completed</button>
+            <button id="click_all" data-alltask="all-task">all</button>
+            <button id="click_inprocess" data-process="process-task">in process</button>
+        </div>
+    <ul class="todo__items" data-process="process-task"></ul>
 </section>
 <section class="content">
-    <div class="task-list">
-        <div id="text-task">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eligendi harum est consequuntur.</div>
-        <button id="click-delete-task">&#10006;</button>
-        <button id="click-confirm-task">&#10003;</button>
+    <div class="add-list">
+        <input type="text" id="add" class="add_text_task" placeholder="NEW TASK"></input>
+        <div id="button-task-list">
+             <div id="test" class="click_confirm_main">&#10003;</div>
+        </div>
     </div>
-    <div class="task-list">
-        <div id="text-task">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eligendi harum est consequuntur.</div>
-        <button id="click-delete-task">&#10006;</button>
-        <button id="click-confirm-task">&#10003;</button>
+
+    <div id="task_list" class="task_list">
+        
     </div>
-    <div class="task-list">
-        <div id="text-task">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eligendi harum est consequuntur.</div>
-        <button id="click-delete-task">&#10006;</button>
-        <button id="click-confirm-task">&#10003;</button>
-    </div>
-    <div class="task-list">
-        <div id="text-task">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eligendi harum est consequuntur.</div>
-        <button id="click-delete-task">&#10006;</button>
-        <button id="click-confirm-task">&#10003;</button>
-    </div>
-    <div class="task-list">
-        <div id="text-task">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eligendi harum est consequuntur.</div>
-        <button id="click-delete-task">&#10006;</button>
-        <button id="click-confirm-task">&#10003;</button>
-    </div>
-    
 </section>
 <section class="footer">
     <div id="list-noumber-task">
@@ -62,7 +46,7 @@
         <div id="noumber-list">5</div>
         <div id="noumber-list">6</div>
     </div>
-<button id="click-deleteall">delete all</button>
+<button id="click-deleteall" data-deleteall="deleteall">delete all</button>
 <hr id="line-up">
 </section>
 </body>
